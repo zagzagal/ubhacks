@@ -41,8 +41,25 @@ public class MainActivity extends Activity {
 	
 	public void btnBetClick(View v){
 		game.placeBet(Integer.parseInt(bet.getText().toString()));
+		updateFields();
+	}
+	
+	public void btnEndClick(View v){
+		game.endTurn();
+	}
+	
+	public void btnCheckClick(View v){
+		game.check();
+		updateFields();
+	}
+	
+	public void btnFoldClick(View v) {
+		game.fold();
+		updateFields();
+	}
+	
+	private void updateFields(){
 		log.setText(game.getLog());
 		currentPlayer.setText(game.getCurrentPlayerName());
 	}
-
 }

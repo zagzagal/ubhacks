@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:onClick="btnBetClick"
-            android:text="Button" />
+            android:text="Bet" />
 
     </LinearLayout>
 
@@ -67,6 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
+            android:onClick="btnCheckClick"
             android:text="Check" />
 
         <Button
@@ -74,6 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
+            android:onClick="btnFoldClick"
             android:text="Fold" />
 
         <Button
@@ -81,6 +83,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
+            android:onClick="btnEndClick"
             android:text="End Betting Phase" />
 
     </LinearLayout>
