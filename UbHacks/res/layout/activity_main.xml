@@ -17,7 +17,8 @@
         android:layout_gravity="center_horizontal|top"
         android:layout_weight="0.44"
         android:ems="10"
-        android:inputType="none" >
+        android:inputType="none"
+        android:typeface="monospace" >
 
         <requestFocus android:layout_width="wrap_content" />
     </TextView>
@@ -30,29 +31,36 @@
 
         <TextView
             android:id="@+id/txtCurrentPlayer"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left|center_vertical"
-            android:layout_weight=".5"
             android:text="CP"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
             android:id="@+id/currentBet"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_weight=".25"
+            android:layout_gravity="right|center_vertical|fill_horizontal"
             android:ems="10"
             android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnBet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:onClick="btnBetClick"
+            android:text="Button" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/buttonbar"
         android:layout_width="fill_parent"
-        android:layout_height="118dp"
-        android:layout_gravity="bottom" >
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.33" >
 
         <Button
             android:id="@+id/checkBtn"
@@ -70,7 +78,7 @@
 
         <Button
             android:id="@+id/endBet"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:text="End Betting Phase" />
